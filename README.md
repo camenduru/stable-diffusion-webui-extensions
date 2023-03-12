@@ -6,7 +6,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Extensions-index
 
 ## Extensions Sorted by Developer
 
-## Total 178 Registered 106 Not Registered 72
+#### Total 178 Registered 106 Not Registered 72
 
 <a href="https://github.com/105gun/sd-webui-controlnet">/105gun/sd-webui-controlnet</a><br>
 <a href="https://github.com/36DB/stable-diffusion-webui">/36DB/stable-diffusion-webui</a><br>
