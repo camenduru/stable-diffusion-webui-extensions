@@ -2,7 +2,7 @@
 
 https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Extensions
 
-https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Extensions-index
+https://github.com/AUTOMATIC1111/stable-diffusion-webui-extensions
 
 ## Extensions Sorted by Developer
 
