@@ -27,7 +27,7 @@ const text = reactive({
 
 <template>
   <div class="creator-archive">
-    <span style="font-size: 50px; color: #E6E6E6;">Extension Index</span>
+    <span style="font-size: 40px; color: #E6E6E6;">Stable Diffusion WebUI Extensions</span>
     <div>
     <a href="https://github.com/camenduru/stable-diffusion-webui-extensions"><img alt="GitHub" src="/github.svg"  height="20" /></a>&nbsp;
       <a href="https://twitter.com/camenduru"><img alt="Twitter" src="/twitter.svg" height="20" /></a>&nbsp;
