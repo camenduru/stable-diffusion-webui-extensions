@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from "vue";
 import { useFetch } from "@vueuse/core";
+import stable_diffusion_webui_aesthetic_gradients from '../extensions/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients/Readme.md'
 
 document.title = "Stable Diffusion WebUI Extensions";
-const url = ref("https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui-extensions/master/index.json");
+// const url = ref("https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui-extensions/master/index.json");
+const url = ref("/extensions.json");
 const refetch = ref(false);
 const { data, error, statusCode, isFetching, isFinished, canAbort } = useFetch(
   url,
@@ -45,7 +47,7 @@ const text = reactive({
     </div>
     <br>
   </div>
-  <masonry-wall v-if="text.data.extensions" :items="text.data.extensions" :ssr-columns="1" :column-width="350" :gap="10">
+  <masonry-wall v-if="text.data" :items="text.data" :ssr-columns="1" :column-width="350" :gap="10">
     <template #default="{ item, index }">
       <div class="grid-item">
         <a :href="`${item.url}`"><span style="font-size: 22px; color: hotpink;">{{ item.name }}</span></a><br>
@@ -58,4 +60,5 @@ const text = reactive({
       </div>
     </template>
   </masonry-wall>
+  <stable_diffusion_webui_aesthetic_gradients /> 
 </template>
