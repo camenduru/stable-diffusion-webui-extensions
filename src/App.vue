@@ -2,7 +2,7 @@
 import { computed, reactive, ref } from "vue";
 import { useFetch } from "@vueuse/core";
 
-document.title = "Extension Index";
+document.title = "Stable Diffusion WebUI Extensions";
 const url = ref("https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui-extensions/master/index.json");
 const refetch = ref(false);
 const { data, error, statusCode, isFetching, isFinished, canAbort } = useFetch(
