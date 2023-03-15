@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from "vue";
 import { useFetch } from "@vueuse/core";
-import stable_diffusion_webui_aesthetic_gradients from '/extensions/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients/Readme.md'
+import stable_diffusion_webui_aesthetic_gradients from './AUTOMATIC1111_stable_diffusion_webui_aesthetic_gradients.md'
 
 document.title = "Stable Diffusion WebUI Extensions";
 // const url = ref("https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui-extensions/master/index.json");
