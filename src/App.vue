@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from "vue";
 import { useFetch } from "@vueuse/core";
-import stable_diffusion_webui_aesthetic_gradients from './AUTOMATIC1111_stable_diffusion_webui_aesthetic_gradients.md'
 
 document.title = "Stable Diffusion WebUI Extensions";
 // const url = ref("https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui-extensions/master/index.json");
@@ -57,8 +56,8 @@ const text = reactive({
         <br>
         <span style="font-size: 22px; color: whitesmoke;">{{ item.description }}</span><br>
         <span style="font-size: 12px; color: hotpink;">{{ item.added }}</span><br>
+        <a :href="`${item.url}`"><span style="font-size: 22px; color: hotpink;">README</span></a><br>
       </div>
     </template>
   </masonry-wall>
-  <stable_diffusion_webui_aesthetic_gradients /> 
 </template>
