@@ -46,7 +46,7 @@ const text = reactive({
     </div>
     <br>
   </div>
-  <masonry-wall v-if="text.data" :items="text.data" :ssr-columns="1" :column-width="350" :gap="10">
+  <masonry-wall v-if="text.data.extensions" :items="text.data.extensions" :ssr-columns="1" :column-width="350" :gap="10">
     <template #default="{ item, index }">
       <div class="grid-item">
         <a :href="`${item.url}`"><span style="font-size: 22px; color: hotpink;">{{ item.name }}</span></a><br>
